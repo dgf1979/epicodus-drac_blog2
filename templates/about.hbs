@@ -1,0 +1,13 @@
+<h2>About Dracula</h2>
+<p>He be suckin' blood 'n stuff.</p>
+
+<button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn Dracula's real name!</button>
+
+{{#if isPictureShowing}}
+<button class="btn btn-default" {{action 'hidePicture'}}>Click here to hide the picture</button>
+<p><img src="http://upload.wikimedia.org/wikipedia/en/2/29/Count_von_Count_kneeling.png" alt="A photo of Dracula" /></p>
+
+{{else}}
+<button class="btn btn-info" {{action 'showPicture'}}>Click here to see a picture</button>
+
+{{/if}}
